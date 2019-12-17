@@ -1,0 +1,356 @@
+:root{
+    --light-grey: #767676;
+    --dark-grey: #404040;
+    --light-green: rgba(127, 213, 112, 0.8);
+    --medium-green: rgba(84, 196, 121, 0.8);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+li {
+      float: left;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover {
+    background-color: #111;
+}
+#home {
+    margin-left: 1000px;
+}
+.img{
+    height: 95vh;
+    background-image:
+        linear-gradient(to right bottom,#575656af,#36363688),
+        url('../img/golden-gate-bridge-731207_1920.jpg');
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(0 0, 100% 0, 100% 81%, 0 100%);
+}
+.text-box{
+    font-family: 'McLaren', cursive;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%)
+}
+.text-box h1{
+    font-size: 3rem;
+    color: rgb(255, 51, 51);
+    text-align: center;
+}
+.text-box p{
+    font-size: 1rem;
+    color: white;
+    text-align: center;
+}
+
+@media (max-width:768px) {
+    .navigatorbar{
+        text-align: center;
+    }
+    .navigation-wrapper{
+        width: 100%;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr))
+    }
+    li{
+        width: 320px;
+        text-align: center;
+    }
+    #home{
+        margin:0;
+    }
+    .text-box{
+        padding-top: 40rem;
+        width: 75%;
+    }
+}
+.container{
+    text-align: center;
+}
+
+.myButton {
+	background-color:#666666;
+	border-radius:5px;
+	border:2px solid #303030;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+    font-family: 'McLaren', cursive;
+    font-size:17px;
+	padding:16px 66px;
+	text-decoration:none;
+}
+.myButton:hover {
+	background-color:#575757;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+.textboxes{
+    width: 96,5%;
+    height: 100%;
+    padding: 2rem;
+}
+.features {
+    display: grid;
+    gap: 50px;
+    grid-template-areas:
+    "feature feature feature"
+    "feature feature feature";
+    margin: 0 auto;
+    width: 50%;
+    height: 50%;
+}
+
+.feature {
+    background: rgb(224, 224, 224);
+    padding: 10px;
+    text-align: center;
+    display: inline-block;
+    width: 250px;
+    height: 250px;
+    font-family: 'Lato', sans-serif;
+    justify-items: center;
+}
+.feature h3{
+    color:rgba(0, 0, 0, 0.671);
+}
+.feature h2{
+    color: rgb(255, 51, 51);
+    font-family: 'Roboto', sans-serif;
+}
+.feature p {
+    color: rgba(0,0,0,0.5);
+}
+.feature h1{
+    color: rgb(255, 51, 51);
+    font-size: 1rem;
+    padding-top: 3rem;
+}
+.feature:hover{
+    background: rgb(175, 175, 175);
+}
+@media (max-width:768px){
+        .features{
+        display: grid;
+        width: auto;
+        margin: 0 auto;
+        grid-template-areas:
+        "feature"
+        "feature" 
+        "feature"
+        "feature"
+        "feature"
+        "feature";
+    }
+}
+.video{
+    height: 95vh;
+    background-image:
+        linear-gradient(to right bottom,#575656af,#36363688),
+        url('../img/Gray+Skies+Photo.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.video h2{
+    text-align: center;
+    padding-top: 23rem;
+    font-family: 'McLaren', cursive;
+    color: rgb(255, 51, 51);
+    font-size: 4rem;
+}
+@media(max-width:768px){
+    .video h2{ 
+        font-size: 2rem;
+        padding-top: 8rem;
+        width: 320px;
+    }
+}
+.works{
+    text-align: center;
+    padding: 2rem;
+    font-family: 'McLaren', cursive;
+}
+.works p{
+    color: rgba(0,0,0,0.5);
+}
+.works h1{
+    color: rgb(255, 51, 51);
+}
+.works ul {
+    list-style-type: none;
+    margin-left: 34%;
+    padding: 0;
+    padding-top: 2rem;
+    overflow: hidden;
+    background-color: #fff;
+}
+.works li a {
+  display: block;
+  color: rgba(0, 0, 0, 0.678);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.works li a:hover {
+    background: rgb(175, 175, 175);
+}
+@media(max-width:768px){
+    .works{
+        width: 320px;
+        text-align: center;
+        padding: 0;
+    }
+    .works ul{
+        margin: 0;
+    }
+}
+.gallery{
+    text-align: center;
+}
+.gallery img{
+    width: 250px;
+}
+
+.about-container{
+    height: 95vh;
+    background-image:
+        linear-gradient(to right bottom, #575656ec, #363636d8),
+        url('../img/leaf-nature-green-spring-158780.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+.about-container h2{
+    text-align: center;
+    padding-top: 17rem;
+    font-family: 'McLaren', cursive;
+    color: rgb(255, 51, 51);
+    font-size: 4rem;
+}
+.about-container p{
+    text-align: center;
+    font-family: 'McLaren', cursive;
+    color: rgb(255, 51, 51);
+    font-size: 1.5rem;
+    margin: 10px;
+}
+@media(max-width:768px){
+    .about-container h2{
+        font-size: 2.5rem;
+        padding: 0;
+        padding-top: 1rem;
+    }
+    .about-container p{
+        font-size: 1rem;
+    }
+}
+.contact-container {
+    width: 100%;
+
+    display: grid;
+    text-align: center;
+    width: auto;
+    background-size: cover;
+    background-position-y: 65%;  
+    background-color: rgba(0,0,0,0.8);
+}
+
+.statistics{
+    text-align: center;
+    color: rgb(255, 51, 51);
+    font-family: 'McLaren', cursive;
+}
+.statistics h2{
+    font-size: 3rem;
+    margin: 10px;
+}
+.statistics p{
+    font-size: 1rem;
+}
+/* Make sure that padding behaves as expected */
+* {box-sizing:border-box}
+
+/* Container for skill bars */
+.skills_container {
+  width: 55%; /* Full width */
+  background-color: #ddd; /* Grey background */
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.skills {
+  text-align: right; /* Right-align text */
+  padding-top: 10px; /* Add top padding */
+  padding-bottom: 10px; /* Add bottom padding */
+  color: white; /* White text color */
+}
+
+.html {width: 90%; background-color: #4CAF50;} /* Green */
+.css {width: 80%; background-color: #2196F3;} /* Blue */
+.js {width: 65%; background-color: #f44336;} /* Red */
+.php {width: 60%; background-color: #808080;} /* Dark Grey */
+
+.contact-container a{
+    color: rgb(255, 51, 51);
+    font-size: 20px;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.contacts {
+    background-color: rgba(0,0,0,0.8);
+    height: 300px;
+}
+.contacts-Info {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: max-content;
+    margin: 30px auto 0 auto;
+}
+.contact-Item {
+    width: 300px;
+}
+.contact-Item img {
+    height: 40px;
+}
+.contact-Item p {
+    color: rgb(255, 51, 51);
+    font-weight: 500;
+    line-height: 40px;
+    font-size: 20px;
+}
+
+.copy-right {
+    color: rgb(255, 51, 51);
+    text-align: center;
+    padding: 20px 0px;
+    font-weight: 700;
+    margin-top: -35px;
+    font-size: 20px;
+}
+@media(max-width:768px){
+    .contact-container{
+        width: 320px;
+    }
+    .contacts-Info{
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr))
+    }
+}
